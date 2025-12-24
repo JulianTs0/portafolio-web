@@ -1,0 +1,6 @@
+.text {
+    text-align: left;
+    font-family: var(--font-detail);
+    font-weight: 500;
+    font-size: 16px;
+}

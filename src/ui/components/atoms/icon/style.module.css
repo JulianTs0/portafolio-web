@@ -1,0 +1,25 @@
+.container {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-self: center;
+    justify-content: center; 
+    align-items: center;
+}
+
+.bigContainer{
+    height: 50px;
+    width: 50px;
+}
+
+.icon {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+}
+
+.bigIcon {
+    height: 48px;
+    width: 48px;
+    object-fit: contain;
+}

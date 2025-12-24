@@ -1,0 +1,19 @@
+.text {
+    text-align: left;
+    width: fit-content;
+    font-family: var(--font-detail);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navLink {
+    color: var(--font-color);
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.navLink:hover {
+    text-shadow: 0 0 1px var(--font-color);
+    color: var(--hover);
+}
