@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&family=Share+Tech+Mono&display=swap');
+
+:root {
+
+    --font-detail: 'Share Tech Mono', monospace;
+    --font-main: 'JetBrains Mono', monospace;
+
+    --max-width: 1920px;
+    --min-width: 360px;
+
+    --font-color: #000000;
+    --primary: #D9D9D9;
+    --hover: #A60000;
+}
