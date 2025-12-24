@@ -1,0 +1,49 @@
+.mainContainer {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.textContainer {
+    width: fit-content;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 10px;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+
+.grow {
+    flex: 1;
+}
+
+.timelineItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nodeCircle {
+    width: 22px;
+    height: 22px;
+    background-color: var(--font-color);
+    border: 5px solid var(--primary);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.nodeLine {
+    width: 2px;
+    height: 100%;
+    background-color: var(--font-color);
+    margin-top: -1px;
+}
