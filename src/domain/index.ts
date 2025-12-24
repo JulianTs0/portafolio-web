@@ -1,0 +1,7 @@
+export * from "./types/IconItem"
+export * from "./types/LinkedIconItem"
+export * from "./types/SkillItem"
+export * from "./types/SkillList"
+export * from "./types/ProyectItem"
+export * from "./types/TimeItem"
+export * from "./types/LinkItem"
