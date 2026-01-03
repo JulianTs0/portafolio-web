@@ -26,6 +26,11 @@ import SqlserverIcon from "../../ui/assets/icons/sqlserver.svg";
 import TerminalIcon from "../../ui/assets/icons/terminal.svg";
 import TypescriptIcon from "../../ui/assets/icons/typescript.svg";
 import UmlIcon from "../../ui/assets/icons/uml.svg";
+import WebSocket from "../../ui/assets/icons/websocket.svg"
+import Postman from "../../ui/assets/icons/postman.svg"
+import Oauth from "../../ui/assets/icons/oauth.svg"
+import Swagger from "../../ui/assets/icons/swagger.svg"
+import Grafana from "../../ui/assets/icons/grafana.svg"
 
 export class IconMapper {
 
@@ -57,6 +62,11 @@ export class IconMapper {
         "TERMINAL": TerminalIcon,
         "TYPESCRIPT": TypescriptIcon,
         "UML": UmlIcon,
+        "SOCKET": WebSocket,
+        "POSTMAN": Postman,
+        "OAUTH": Oauth,
+        "SWAGGER": Swagger,
+        "GRAFANA": Grafana
     }
 
     public static getIcon(type?: string): string {
