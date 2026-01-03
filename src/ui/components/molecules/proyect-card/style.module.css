@@ -8,9 +8,24 @@
     align-items: center;
     gap: 18px;
     padding: 0px 10px;
+    padding-left: 25px;
     background-color: var(--primary);
     border-radius: 4px;
     box-sizing: border-box;
+    transition: background-color 0.2s ease;
+}
+
+.mainContainer:hover {
+    background-color: var(#000, #ccc);
+}
+
+.icon {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+}
+
+.mainContainer:hover .icon {
+    transform: scale(1.2); 
+    filter: brightness(1.2);
 }
 
 .textContainer {

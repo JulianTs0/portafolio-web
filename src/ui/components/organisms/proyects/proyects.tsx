@@ -18,7 +18,7 @@ export default function Proyects({
             <div className={style.itemContainer}>
                 { proyects.map( (item,index) => (
                     <div key={index}>
-                        <ProyectCard tittleText={item.tittle} icon={item.icon} detailText={item.description} />
+                        <ProyectCard tittleText={item.tittle} icon={item.icon} detailText={item.description} onCLick={item.goTo} />
                     </div>
                 ))}
             </div>   

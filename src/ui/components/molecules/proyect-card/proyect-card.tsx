@@ -7,16 +7,18 @@ type Props = {
     icon: string;
     tittleText: string;
     detailText: string;
+    onCLick: () => void;
 }
 
 export default function ProyectCard({
     icon,
     tittleText,
-    detailText
+    detailText,
+    onCLick
 }: Props) {
     return (
         <div className={style.mainContainer}>
-            <Icon icon={icon} />
+            <Icon icon={icon} onClick={onCLick} className={style.icon}/>
             <div className={style.textContainer}>
                 <MediumTittle text={tittleText} />
                 <DetailText text={detailText} />

@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.clickeable {
+    cursor: pointer;
+}
+
 .bigContainer{
     height: 50px;
     width: 50px;

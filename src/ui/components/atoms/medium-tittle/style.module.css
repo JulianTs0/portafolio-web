@@ -1,6 +1,7 @@
 .tittle {
     text-align: left;
     font-family: var(--font-main);
+    font-variant-ligatures: none;
     font-weight: 500;
     font-size: 24px;
 }

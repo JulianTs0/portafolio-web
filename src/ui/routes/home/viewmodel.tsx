@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { type IconItem, type LinkedIconItem, type LinkItem, type ProyectItem, type SkillList, type TimeItem } from "../../../domain";
 
 export function ViewModel() {
+
+    const navigate = useNavigate();
 
     const iconHeader: string = "terminal";
     const headerLinks: LinkItem[] = [
@@ -60,16 +63,26 @@ export function ViewModel() {
 
     const proyectTittle: string = "Mis proyectos";
 
+    const navigateFortune = () => {
+        navigate("/proyects/fortune")
+    }
+
+    const navigateContenedores = () => {
+        navigate("/proyects/contenedores")
+    }
+
     const proyectItems: ProyectItem[] = [
         {
             tittle: "Fortune",
             description: "Una red social que ayuda a los músicos a conectar con sus futuros empleadores y expandir su influencia con la gran comunidad de músicos",
-            icon: "DEFAULT"
+            icon: "DEFAULT",
+            goTo: navigateFortune
         },
         {
             tittle: "contenedores-api",
             description: "Un proyecto el cual sirve para la gestión de pedidos de traslado de contenedores para la construccion de casas",
-            icon: "DEFAULT"
+            icon: "DEFAULT",
+            goTo: navigateContenedores
         }
     ];
 
