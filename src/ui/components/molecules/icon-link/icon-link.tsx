@@ -1,6 +1,7 @@
 import style from "./style.module.css"
 import Icon from "../../atoms/icon/icon"
-import LinkText from "../link-text/link-text"
+import DetailText from "../../atoms/detail-text/detail-text"
+import { LinkMapper } from "../../../../core";
 
 type Props = {
     icon: string;
@@ -14,9 +15,14 @@ export default function IconLink({
     link
 }: Props) {
     return (
-        <div className={style.container}>
+        <a 
+            href={LinkMapper.getLink(link)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.container}
+        >
             <Icon icon={icon}/>
-            <LinkText text={text} link={link} />
-        </div>  
+            <DetailText text={text} />
+        </a>  
     )
 }

@@ -17,8 +17,8 @@ export default function ProyectCard({
     onCLick
 }: Props) {
     return (
-        <div className={style.mainContainer}>
-            <Icon icon={icon} onClick={onCLick} className={style.icon}/>
+        <div className={style.mainContainer} onClick={onCLick}>
+            <Icon icon={icon} className={style.icon}/>
             <div className={style.textContainer}>
                 <MediumTittle text={tittleText} />
                 <DetailText text={detailText} />

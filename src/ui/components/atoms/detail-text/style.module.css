@@ -1,7 +1,7 @@
 .text {
-    text-align: left;
     font-family: var(--font-detail);
-    font-weight: 500;
+    text-align: left;
+    font-weight: 400;
     font-size: 16px;
     white-space: pre-wrap;
 }

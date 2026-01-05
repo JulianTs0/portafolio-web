@@ -17,9 +17,7 @@ export default function Education({
             <LargeTittle text={mainTittle} />
             <div className={style.itemContainer}>
                 { educationList.map( (item,index) => (
-                    <div key={index}>
-                        <TimelineCard tittle={item.tittle} description={item.description} date={item.date} />
-                    </div>
+                    <TimelineCard key={index} tittle={item.tittle} description={item.description} date={item.date} />
                 ))}
             </div>   
         </div>

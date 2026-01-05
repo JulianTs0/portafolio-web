@@ -8,6 +8,16 @@
     --max-width: 1920px;
     --min-width: 360px;
 
+    --background-color: #FFFFFF;
+    --background-secondary: #F8F9FA;
+    --text-primary: #121212;
+    --text-secondary: #4a4a4a;
+    --accent-primary: #E50914;
+    --accent-hover: #C40812;
+    --border-color: #cccccc;
+    --background-blur: #FFFFFFCC;
+    --shadow-color: #00000014;
+    
     --font-color: #000000;
     --primary: #D9D9D9;
     --hover: #A60000;

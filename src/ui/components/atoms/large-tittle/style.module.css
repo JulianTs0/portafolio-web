@@ -1,6 +1,9 @@
 .tittle {
-    text-align: left;
     font-family: var(--font-main);
-    font-weight: 500;
-    font-size: 36px;
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--text-primary);
+    border-bottom: 4px solid var(--accent-primary);
+    padding-bottom: 8px;
+    margin-bottom: 1rem;
 }

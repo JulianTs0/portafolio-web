@@ -33,26 +33,28 @@ export default function FortuneRoute() {
     return (
         <Layout>
             <Header icon={iconHeader} links={headerLinks} onClick={onCLickHeader}/>
-            <ProyectExpo 
-                mainTittle={mainTittle}
-                generalTittle={generalTittle}
-                generalDescription={generalDescription}
-                rangeTittle={rangeTittle}
-                rangeDescription={rangeDescription}
-                archTittle={archTittle}
-                archDescription={archDescription}
-                archImg={archImg}
-                orgTittle={orgTittle}
-                orgDescription={orgDescription}
-                expTittle={expTittle}
-                expDescription={expDescription}
-                techTittle={techTittle}
-                techIcons={techIcons}
-                linkTittle={linkTittle}
-                links={links}
-                demoTittle={demoTittle}
-                demos={demos}
-            />
+            <main className="delimiter">
+                <ProyectExpo 
+                    mainTittle={mainTittle}
+                    generalTittle={generalTittle}
+                    generalDescription={generalDescription}
+                    rangeTittle={rangeTittle}
+                    rangeDescription={rangeDescription}
+                    archTittle={archTittle}
+                    archDescription={archDescription}
+                    archImg={archImg}
+                    orgTittle={orgTittle}
+                    orgDescription={orgDescription}
+                    expTittle={expTittle}
+                    expDescription={expDescription}
+                    techTittle={techTittle}
+                    techIcons={techIcons}
+                    linkTittle={linkTittle}
+                    links={links}
+                    demoTittle={demoTittle}
+                    demos={demos}
+                />
+            </main>
         </Layout>
     )
 }

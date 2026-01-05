@@ -1,3 +1,4 @@
+import style from "./style.module.css";
 import { LinkMapper } from "../../../../core";
 import DetailText from "../../atoms/detail-text/detail-text"
 
@@ -15,6 +16,7 @@ export default function LinkText({
             href={LinkMapper.getLink(link)}
             target="_blank"
             rel="noopener noreferrer"
+            className={style.link}
         >
             <DetailText text={text}/>
         </a>

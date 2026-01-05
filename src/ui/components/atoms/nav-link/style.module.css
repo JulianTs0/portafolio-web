@@ -1,19 +1,29 @@
-.text {
-    text-align: left;
-    width: fit-content;
+.navLink {
     font-family: var(--font-detail);
     font-weight: 500;
     font-size: 16px;
-}
-
-.navLink {
-    color: var(--font-color);
+    color: var(--text-primary);
     text-decoration: none;
-    border: none;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 4px;
 }
 
 .navLink:hover {
-    text-shadow: 0 0 1px var(--font-color);
-    color: var(--hover);
+    color: var(--accent-primary);
+}
+
+.navLink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-primary);
+    transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+    width: 100%;
 }
