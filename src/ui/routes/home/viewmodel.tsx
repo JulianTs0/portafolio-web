@@ -81,7 +81,7 @@ export function ViewModel() {
         {
             tittle: "contenedores-api",
             description: "Un proyecto el cual sirve para la gestión de pedidos de traslado de contenedores para la construccion de casas",
-            icon: "DEFAULT",
+            icon: "CONTAINER",
             goTo: navigateContenedores
         }
     ];
