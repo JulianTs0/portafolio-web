@@ -32,7 +32,7 @@ export function ViewModel() {
     ];
 
     const archTittle: string = "Arquitectura utilizada";
-    const archDescription: string = "La arquitectura garantiza una experiencia fluida, escalable y segura:\n\nBackend: Arquitectura de Microservicios, donde cada servicio aplica el patrón Layered (Datos, Dominio, Presentación) y posee su propia base de datos (Database per Service). Se implementó una librería compartida (Core) para centralizar Entidades y DTOs comunes. El modelo de persistencia separa estrictamente los modelos de base de datos de las entidades de dominio.\n\nFrontend: Clean Architecture con capas de Core, Domain, Infrastructure y UI. La interfaz utiliza Atomic Design (Atomos, Moléculas, Organismos) para una máxima reutilización de componentes.";
+    const archDescription: string = "La arquitectura garantiza una experiencia fluida, escalable y segura:\n\nBackend: Arquitectura de Microservicios, donde cada servicio aplica el patrón Layered (Datos, Dominio, Presentación) y posee su propia base de datos (Database per Service). Se implementó una librería compartida (Core) para centralizar Entidades y DTOs comunes. El modelo de persistencia separa estrictamente los modelos de base de datos de las entidades de dominio.\n\nFrontend: Clean Architecture con capas de Core, Domain, Infrastructure y UI. La interfaz utiliza Atomic Design (Átomos, Moléculas, Organismos) para una máxima reutilización de componentes.";
     const archImg: string = "F_ARCHFORTUNE";
 
     const orgTittle: string = "El equipo";
@@ -51,7 +51,7 @@ export function ViewModel() {
         "QA: Desarrollo de colecciones de Postman para pruebas exhaustivas de la API."
     ];
 
-    const techTittle: string = "Tecnologias";
+    const techTittle: string = "Tecnologías";
     const techIcons: string[] = [
         "JAVA",
         "SPRING",
@@ -72,7 +72,7 @@ export function ViewModel() {
         { text: "Plataforma", link: "main_fortune" },
     ]
 
-    const demoTittle: string = "Presentacion";
+    const demoTittle: string = "Presentación";
     const demos: string[] = [
         "F_CHAT",
         "F_EVENTOS",

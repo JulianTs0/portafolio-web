@@ -7,13 +7,13 @@ export function ViewModel() {
 
     const iconHeader: string = "terminal";
     const headerLinks: LinkItem[] = [
-        { text: "Sobre Mi", link: "about" },
+        { text: "Sobre mí", link: "about" },
         { text: "Proyectos", link: "proyects" },
-        { text: "Formacion", link: "education" }
+        { text: "Formación", link: "education" }
     ]
 
     const nameTitle: string = "Julián Torres Sorcini";
-    const functionTittle: string = "Estudiante de ingenieria en sistemas -> Desarollador de software";
+    const functionTittle: string = "Estudiante de ingeniería en sistemas -> Desarrollador de software";
     const linkedIconItems: LinkedIconItem[] = [
         { text: "LinkedIn", icon: "linkedin", link: "linkedin" },
         { text: "Mi repositorio", icon: "github", link: "github" }
@@ -44,7 +44,7 @@ export function ViewModel() {
             ]
         },
         {
-            tittle: "Frameworks / Librerias",
+            tittle: "Frameworks / Librerías",
             skills: [
                 { icon: "REACT", text: "React" },
                 { icon: "SPRING", text: "Spring" }
@@ -74,13 +74,13 @@ export function ViewModel() {
     const proyectItems: ProyectItem[] = [
         {
             tittle: "Fortune",
-            description: "Una red social que ayuda a los músicos a conectar con sus futuros empleadores y expandir su influencia con la gran comunidad de músicos",
+            description: "Una red social que ayuda a los músicos a conectar con sus futuros empleadores y expandir su influencia con la gran comunidad de músicos.",
             icon: "FORTUNE",
             goTo: navigateFortune
         },
         {
-            tittle: "contenedores-api",
-            description: "Un proyecto el cual sirve para la gestión de pedidos de traslado de contenedores para la construccion de casas",
+            tittle: "Contenedores-API",
+            description: "Un proyecto que gestiona pedidos de traslado de contenedores para la construcción de casas.",
             icon: "CONTAINER",
             goTo: navigateContenedores
         }
@@ -90,7 +90,7 @@ export function ViewModel() {
 
     const timeItems: TimeItem[] = [
         {
-            tittle: "Tecnico Electronico",
+            tittle: "Técnico Electrónico",
             description: "Instituto Privado Parroquial San Roque",
             date: "2015 - 2022"
         },

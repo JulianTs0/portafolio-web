@@ -49,7 +49,7 @@ export function ViewModel() {
         "Calidad: Documentación técnica con Swagger y suites de pruebas automatizadas con Postman."
     ];
 
-    const techTittle: string = "Tecnologias";
+    const techTittle: string = "Tecnologías";
     const techIcons: string[] = [
         "JAVA",
         "SPRING",
@@ -67,7 +67,7 @@ export function ViewModel() {
         { text: "Repositorio", link: "git_container" },
     ]
 
-    const demoTittle: string = "Presentacion";
+    const demoTittle: string = "Presentación";
     const demos: string[] = [
         "C_ASIGNTRANS",
         "C_REGSOL",
