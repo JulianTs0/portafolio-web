@@ -7,6 +7,7 @@ import IconRow from "../../molecules/icon-row/icon-row";
 import SimpleLinkList from "../../molecules/simple-link-list/simple-link-list";
 import SimpleImageList from "../../molecules/simple-image-list/simple-image-list";
 import ImageModal from "../../molecules/image-modal/image-modal";
+import TextList from "../../molecules/text-list/text-list";
 
 type Props = {
     mainTittle: string,
@@ -14,6 +15,7 @@ type Props = {
     generalDescription: string,
     rangeTittle: string,
     rangeDescription: string,
+    rangeItems: string[],
     archTittle: string,
     archDescription: string,
     archImg: string,
@@ -21,6 +23,7 @@ type Props = {
     orgDescription: string,
     expTittle: string,
     expDescription: string,
+    expItems: string[],
     techTittle: string,
     techIcons: string[],
     linkTittle: string,
@@ -39,6 +42,7 @@ export default function ProyectExpo({
     generalDescription,
     rangeTittle,
     rangeDescription,
+    rangeItems,
     archTittle,
     archDescription,
     archImg,
@@ -46,6 +50,7 @@ export default function ProyectExpo({
     orgDescription,
     expTittle,
     expDescription,
+    expItems,
     techTittle,
     techIcons,
     linkTittle,
@@ -62,9 +67,11 @@ export default function ProyectExpo({
             <LargeTittle text={mainTittle} />
             <ParagraphBlock tittleText={generalTittle} detailText={generalDescription} />
             <ParagraphBlock tittleText={rangeTittle} detailText={rangeDescription} />
+            <TextList list={rangeItems} />
             <ImageExpo tittleText={archTittle} detailText={archDescription} image={archImg} onClickImage={onClickImage} />
             <ParagraphBlock tittleText={orgTittle} detailText={orgDescription} />
             <ParagraphBlock tittleText={expTittle} detailText={expDescription} />
+            <TextList list={expItems}/>
             <IconRow tittle={techTittle} icons={techIcons} />
             <SimpleLinkList tittle={linkTittle} links={links} />
             <SimpleImageList tittle={demoTittle} images={demos} onClickImages={onClickImage}/>

@@ -15,6 +15,7 @@ export default function ContainerRoute() {
         generalDescription,
         rangeTittle,
         rangeDescription,
+        rangeItems,
         archTittle,
         archDescription,
         archImg,
@@ -22,6 +23,7 @@ export default function ContainerRoute() {
         orgDescription,
         expTittle,
         expDescription,
+        expItems,
         techTittle,
         techIcons,
         linkTittle,
@@ -44,6 +46,7 @@ export default function ContainerRoute() {
                     generalDescription={generalDescription}
                     rangeTittle={rangeTittle}
                     rangeDescription={rangeDescription}
+                    rangeItems={rangeItems}
                     archTittle={archTittle}
                     archDescription={archDescription}
                     archImg={archImg}
@@ -51,6 +54,7 @@ export default function ContainerRoute() {
                     orgDescription={orgDescription}
                     expTittle={expTittle}
                     expDescription={expDescription}
+                    expItems={expItems}
                     techTittle={techTittle}
                     techIcons={techIcons}
                     linkTittle={linkTittle}
