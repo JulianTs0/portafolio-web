@@ -17,3 +17,7 @@
     gap: 24px; 
     padding: 0px 10px;
 }
+
+@media (max-width: 768px) {
+    /* No specific changes needed as base is already column/mobile friendly */
+}

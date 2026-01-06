@@ -15,3 +15,9 @@
     padding: 10px;
     gap: 0px;
 }
+
+@media (max-width: 768px) {
+    .itemContainer {
+        width: 100%;
+    }
+}

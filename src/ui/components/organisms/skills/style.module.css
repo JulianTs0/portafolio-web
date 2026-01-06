@@ -16,3 +16,10 @@
     gap: 16px;
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    .skillContainer {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}

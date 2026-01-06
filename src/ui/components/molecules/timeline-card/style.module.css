@@ -50,3 +50,24 @@
     background-color: var(--accent-primary);
     margin-top: -1px;
 }
+
+@media (max-width: 768px) {
+    .mainContainer {
+        height: auto;
+        align-items: stretch;
+    }
+    
+    .textContainer {
+        width: 100%;
+        height: auto;
+    }
+
+    .timelineItem {
+        height: auto;
+    }
+
+    .nodeLine {
+        height: auto;
+        flex-grow: 1;
+    }
+}
