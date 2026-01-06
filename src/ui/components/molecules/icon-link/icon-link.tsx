@@ -15,14 +15,14 @@ export default function IconLink({
     link
 }: Props) {
     return (
-        <a 
+        <a
             href={LinkMapper.getLink(link)}
             target="_blank"
             rel="noopener noreferrer"
-            className={style.container}
+            className={`${style.container} animated-link `}
         >
-            <Icon icon={icon}/>
+            <Icon icon={icon} />
             <DetailText text={text} />
-        </a>  
+        </a>
     )
 }

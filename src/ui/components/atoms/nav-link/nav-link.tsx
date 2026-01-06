@@ -10,9 +10,9 @@ export default function NavLink({
     link
 }: Props) {
     return (
-        <a 
+        <a
             href={`#${link}`}
-            className={style.navLink}
+            className={`${style.navLink} animated-link`}
         >
             <span className={style.text}>{text}</span>
         </a>

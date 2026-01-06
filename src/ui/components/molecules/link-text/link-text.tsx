@@ -16,7 +16,7 @@ export default function LinkText({
             href={LinkMapper.getLink(link)}
             target="_blank"
             rel="noopener noreferrer"
-            className={style.link}
+            className={`${style.link} animated-link`}
         >
             <DetailText text={text}/>
         </a>

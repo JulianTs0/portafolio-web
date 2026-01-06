@@ -1,7 +1,7 @@
 .link {
-    transition: color 0.3s ease;
-}
-
-.link:hover {
-    color: var(--accent-primary);
+    display: inline-block;
+    font-family: var(--font-detail);
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
 }
