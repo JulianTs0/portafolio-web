@@ -6,6 +6,7 @@ import ImageExpo from "../../molecules/image-expo/image-expo";
 import IconRow from "../../molecules/icon-row/icon-row";
 import SimpleLinkList from "../../molecules/simple-link-list/simple-link-list";
 import SimpleImageList from "../../molecules/simple-image-list/simple-image-list";
+import ImageModal from "../../molecules/image-modal/image-modal";
 
 type Props = {
     mainTittle: string,
@@ -26,6 +27,10 @@ type Props = {
     links: LinkItem[],
     demoTittle: string,
     demos: string[]
+    isImageOpen: boolean;
+    imageModal: string;
+    onClickImage: (image: string) => void;
+    onCLickModal: () => void;
 }
 
 export default function ProyectExpo({
@@ -46,19 +51,30 @@ export default function ProyectExpo({
     linkTittle,
     links,
     demoTittle,
-    demos
+    demos,
+    isImageOpen,
+    imageModal,
+    onClickImage,
+    onCLickModal
 }: Props) {
     return (
         <div className={style.container} >
             <LargeTittle text={mainTittle} />
             <ParagraphBlock tittleText={generalTittle} detailText={generalDescription} />
             <ParagraphBlock tittleText={rangeTittle} detailText={rangeDescription} />
-            <ImageExpo tittleText={archTittle} detailText={archDescription} image={archImg} />
+            <ImageExpo tittleText={archTittle} detailText={archDescription} image={archImg} onClickImage={onClickImage} />
             <ParagraphBlock tittleText={orgTittle} detailText={orgDescription} />
             <ParagraphBlock tittleText={expTittle} detailText={expDescription} />
             <IconRow tittle={techTittle} icons={techIcons} />
             <SimpleLinkList tittle={linkTittle} links={links} />
-            <SimpleImageList tittle={demoTittle} images={demos} />
+            <SimpleImageList tittle={demoTittle} images={demos} onClickImages={onClickImage}/>
+
+            {isImageOpen && (
+                <ImageModal 
+                    image={imageModal}
+                    onExit={onCLickModal}
+                />
+            )}
         </div>
     );
 }

@@ -7,18 +7,20 @@ type Props = {
     tittleText: string;
     detailText: string;
     image: string;
+    onClickImage?: (image: string) => void;
 }
 
 export default function ImageExpo({
     tittleText,
     detailText,
-    image
+    image,
+    onClickImage
 }: Props) {
     return (
         <div className={style.mainContainer}>
             <MediumTittle text={tittleText} />
             <DetailText text={detailText} />
-            <ImageFrame image={image} className={style.imageFrame}/>
+            <ImageFrame image={image} className={style.imageFrame} onClick={ onClickImage ? () => onClickImage(image) : undefined }/>
         </div>
     )
 }

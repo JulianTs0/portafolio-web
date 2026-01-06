@@ -16,9 +16,7 @@ export default function IconRow({
             <MediumTittle text={tittle} />
             <div className={style.container}>
                 {icons.map( (item, index) => (
-                    <div key={index}>
-                        <Icon icon={item}/>
-                    </div>
+                    <Icon icon={item} key={index} className={style.icon}/>
                 ))}
             </div>
         </div>  
