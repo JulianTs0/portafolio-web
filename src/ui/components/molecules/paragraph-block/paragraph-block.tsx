@@ -14,7 +14,7 @@ export default function ParagraphBlock({
     return (
         <div className={style.mainContainer}>
             <MediumTittle text={tittleText} />
-            <DetailText text={detailText} />
+            <DetailText text={detailText} className={style.text} />
         </div>
     )
 }

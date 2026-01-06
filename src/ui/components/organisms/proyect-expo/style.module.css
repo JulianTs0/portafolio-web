@@ -5,7 +5,10 @@
     align-items: flex-start;
     gap: 12px;
     height: 100%;
+    width: 100%; /* Ensure it doesn't exceed screen */
+    max-width: 100%;
     padding: 0px 14px;
+    box-sizing: border-box; /* Handle padding correctly */
 }
 
 @media (max-width: 960px) {

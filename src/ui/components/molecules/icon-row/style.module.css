@@ -1,4 +1,5 @@
 .mainContainer {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,9 +9,10 @@
 }
 
 .container {
-    width: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Added to allow wrapping */
     justify-content: flex-start; 
     align-items: center;
     gap: 24px;
@@ -24,3 +26,4 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 12px var(--shadow-color);
 }
+

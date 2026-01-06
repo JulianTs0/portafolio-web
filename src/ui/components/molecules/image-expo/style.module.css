@@ -11,3 +11,10 @@
 .imageFrame {
     align-self: center;
 }
+
+@media (max-width: 500px) {
+    .imageFrame {
+        width: 70%; /* Reduced from default 85% */
+    }
+}
+

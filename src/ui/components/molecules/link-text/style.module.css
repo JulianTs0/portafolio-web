@@ -5,3 +5,10 @@
     color: var(--text-primary);
     text-decoration: none;
 }
+
+@media (max-width: 768px) {
+    .link {
+        color: var(--accent-primary);
+    }
+}
+

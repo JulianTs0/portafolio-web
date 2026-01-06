@@ -76,6 +76,17 @@
     transform: scaleX(1);
 }
 
+@media (max-width: 768px) {
+    .animated-link {
+        color: var(--accent-primary);
+    }
+    
+    .animated-link::after {
+        transform: scaleX(1);
+    }
+}
+
+
 body {
 	height: 100%;
 	width: 100vw;
