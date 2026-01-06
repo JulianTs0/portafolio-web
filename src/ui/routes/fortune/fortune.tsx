@@ -27,7 +27,11 @@ export default function FortuneRoute() {
         linkTittle,
         links,
         demoTittle,
-        demos
+        demos,
+        onClickImage,
+        onClickModal,
+        isImageOpen,
+        imageModal
     } = ViewModel();
 
     return (
@@ -53,6 +57,10 @@ export default function FortuneRoute() {
                     links={links}
                     demoTittle={demoTittle}
                     demos={demos}
+                    isImageOpen={isImageOpen}
+                    imageModal={imageModal}
+                    onClickImage={onClickImage}
+                    onCLickModal={onClickModal}
                 />
             </main>
         </Layout>

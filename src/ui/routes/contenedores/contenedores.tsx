@@ -27,14 +27,18 @@ export default function ContainerRoute() {
         linkTittle,
         links,
         demoTittle,
-        demos
+        demos,
+        isImageOpen,
+        onClickImage,
+        onClickModal,
+        imageModal
     } = ViewModel();
 
     return (
         <Layout>
             <Header icon={iconHeader} links={headerLinks} onClick={onCLickHeader}/>
             <main className="delimiter">
-                <ProyectExpo 
+                <ProyectExpo
                     mainTittle={mainTittle}
                     generalTittle={generalTittle}
                     generalDescription={generalDescription}
@@ -53,6 +57,10 @@ export default function ContainerRoute() {
                     links={links}
                     demoTittle={demoTittle}
                     demos={demos}
+                    isImageOpen={isImageOpen}
+                    imageModal={imageModal}
+                    onClickImage={onClickImage}
+                    onCLickModal={onClickModal}
                 />
             </main>
         </Layout>

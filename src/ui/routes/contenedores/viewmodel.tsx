@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { type LinkItem } from "../../../domain";
+import { useImageModal } from "../../hooks/useImageModal";
 
 export function ViewModel() {
+
+    const { isImageOpen, imageModal, onClickImage, onClickModal } = useImageModal();
 
     const navigate = useNavigate();
 
@@ -22,7 +25,7 @@ export function ViewModel() {
 
     const archTittle: string = "Arquitectura utilizada";
     const archDescription: string = "Se diseñó una Arquitectura de Microservicios, aplicando el patrón 'Database per Service' (una BDD por microservicio) para garantizar desacoplamiento.\n\nEl despliegue se realiza mediante contenedores independientes. La seguridad se maneja a nivel perimetral (Edge Security), donde el API Gateway valida las credenciales, permitiendo una comunicación interna fluida entre servicios.";
-    const archImg: string = "fortuneArch"
+    const archImg: string = "C_ARCHCONTAINER"
 
     const orgTittle: string = "El equipo";
     const orgDescription: string = "Aunque el proyecto inició en un entorno grupal académico, asumí la responsabilidad integral del desarrollo técnico y la arquitectura final, gestionando el ciclo de vida completo del software para asegurar su entrega.";
@@ -45,14 +48,17 @@ export function ViewModel() {
 
     const linkTittle: string = "Referencias";
     const links: LinkItem[] = [
-        { text: "Repositorio", link: "link" },
-        { text: "Plataforma", link: "link" },
+        { text: "Repositorio", link: "git_container" },
     ]
 
     const demoTittle: string = "Presentacion";
     const demos: string[] = [
-        "demo1",
-        "demo2"
+        "C_ASIGNTRANS",
+        "C_REGSOL",
+        "C_RUTATENT",
+        "C_ASIGNCAM",
+        "C_REGINICIO",
+        "C_REGFIN",
     ]
 
     return {
@@ -76,7 +82,11 @@ export function ViewModel() {
         linkTittle,
         links,
         demoTittle,
-        demos
+        demos,
+        onClickImage,
+        onClickModal,
+        isImageOpen,
+        imageModal
     }
 
 }

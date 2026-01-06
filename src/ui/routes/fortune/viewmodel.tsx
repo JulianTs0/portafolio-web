@@ -1,7 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { type LinkItem } from "../../../domain";
+import { useImageModal } from "../../hooks/useImageModal";
 
 export function ViewModel() {
+
+    const { isImageOpen, imageModal, onClickImage, onClickModal } = useImageModal();
 
     const navigate = useNavigate();
 
@@ -46,14 +49,19 @@ export function ViewModel() {
 
     const linkTittle: string = "Referencias";
     const links: LinkItem[] = [
-        { text: "Repositorio", link: "link" },
-        { text: "Plataforma", link: "link" },
+        { text: "Repositorio", link: "git_fortune" },
+        { text: "Plataforma", link: "main_fortune" },
     ]
 
     const demoTittle: string = "Presentacion";
     const demos: string[] = [
-        "demo1",
-        "demo2"
+        "F_CHAT",
+        "F_EVENTOS",
+        "F_NOTIS",
+        "F_CAL",
+        "F_PERFIL",
+        "F_BUSQUEDA",
+        "F_FEED",
     ]
 
     return {
@@ -77,7 +85,11 @@ export function ViewModel() {
         linkTittle,
         links,
         demoTittle,
-        demos
+        demos,
+        onClickImage,
+        onClickModal,
+        isImageOpen,
+        imageModal
     }
 
 }

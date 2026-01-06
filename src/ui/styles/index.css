@@ -47,6 +47,35 @@
     margin: 0 auto;
 }
 
+.animated-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 4px; 
+    transition: color 0.3s ease;
+}
+
+.animated-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;       
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.animated-link:hover {
+    color: var(--accent-primary);
+}
+
+.animated-link:hover::after {
+    transform: scaleX(1);
+}
+
 body {
 	height: 100%;
 	width: 100vw;

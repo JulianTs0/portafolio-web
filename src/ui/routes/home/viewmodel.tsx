@@ -16,7 +16,7 @@ export function ViewModel() {
     const functionTittle: string = "Estudiante de ingenieria en sistemas -> Desarollador de software";
     const linkedIconItems: LinkedIconItem[] = [
         { text: "LinkedIn", icon: "linkedin", link: "linkedin" },
-        { text: "Mi repositorio", icon: "github", link: "linkedin" }
+        { text: "Mi repositorio", icon: "github", link: "github" }
     ];
     const iconItems: IconItem[] = [
         { text: "Argentina -> Córdoba -> Córdoba capital", icon: "pin" },
@@ -75,7 +75,7 @@ export function ViewModel() {
         {
             tittle: "Fortune",
             description: "Una red social que ayuda a los músicos a conectar con sus futuros empleadores y expandir su influencia con la gran comunidad de músicos",
-            icon: "DEFAULT",
+            icon: "FORTUNE",
             goTo: navigateFortune
         },
         {
