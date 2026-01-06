@@ -13,6 +13,7 @@ import CalendarioIcon from "../../ui/assets/images/calendario.png";
 import PerfilIcon from "../../ui/assets/images/perfil.png";
 import BusquedaIcon from "../../ui/assets/images/busqueda.png";
 import FeedIcon from "../../ui/assets/images/feed.png";
+import FortuneImage from "../../ui/assets/images/archFortune.svg"
 
 export class ImagessMapper {
 
@@ -25,6 +26,7 @@ export class ImagessMapper {
         "C_ASIGNCAM": AsignarCamion,
         "C_ARCHCONTAINER": ContainerImage,
         "F_CHAT": ChatIcon,
+        "F_ARCHFORTUNE": FortuneImage,
         "F_EVENTOS": EventosIcon,
         "F_NOTIS": NotisIcon,
         "F_CAL": CalendarioIcon,

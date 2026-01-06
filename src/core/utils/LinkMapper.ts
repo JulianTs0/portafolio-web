@@ -4,7 +4,8 @@ export class LinkMapper {
         "GITHUB": "https://github.com/JulianTs0",
         "LINKEDIN": "https://www.linkedin.com/in/julian-torres-sorcini-aa4a67238/",
         "MAIN_FORTUNE": "https://fortune-utn.vercel.app",
-        "GIT_FORTUNE": "",
+        "GIT_FORTUNE_SV": "https://github.com/JulianTs0/seminario-server",
+        "GIT_FORTUNE_CLI": "https://github.com/JulianTs0/seminario-client",
         "GIT_CONTAINER": "https://github.com/JulianTs0/contenedores-api",
         "DEFAULT": ""
     }

@@ -33,7 +33,7 @@ export function ViewModel() {
 
     const archTittle: string = "Arquitectura utilizada";
     const archDescription: string = "La arquitectura garantiza una experiencia fluida, escalable y segura:\n\nBackend: Arquitectura de Microservicios, donde cada servicio aplica el patrón Layered (Datos, Dominio, Presentación) y posee su propia base de datos (Database per Service). Se implementó una librería compartida (Core) para centralizar Entidades y DTOs comunes. El modelo de persistencia separa estrictamente los modelos de base de datos de las entidades de dominio.\n\nFrontend: Clean Architecture con capas de Core, Domain, Infrastructure y UI. La interfaz utiliza Atomic Design (Atomos, Moléculas, Organismos) para una máxima reutilización de componentes.";
-    const archImg: string = "fortuneArch"
+    const archImg: string = "F_ARCHFORTUNE";
 
     const orgTittle: string = "El equipo";
     const orgDescription: string = "El desarrollo fue llevado a cabo por un equipo de colegas universitarios. Nos organizamos bajo metodologías ágiles (Scrum), gestionando el ciclo de vida del desarrollo a través de sprints y utilizando Jira para el seguimiento de tareas.";
@@ -67,7 +67,8 @@ export function ViewModel() {
 
     const linkTittle: string = "Referencias";
     const links: LinkItem[] = [
-        { text: "Repositorio", link: "git_fortune" },
+        { text: "Repositorio del Cliente", link: "git_fortune_cli" },
+        { text: "Repositorio del Servidor", link: "git_fortune_sv" },
         { text: "Plataforma", link: "main_fortune" },
     ]
 
