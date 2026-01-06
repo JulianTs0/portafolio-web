@@ -1,0 +1,38 @@
+.mainContainer {
+    position: fixed;
+    inset: 0;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--black-blur);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.imageFrame {
+    width: 100%;
+    height: auto;
+    max-width: 85vw;
+    max-height: 75vh;
+    box-shadow: 0 25px 50px -12px var(--black-blur);
+    background-color: var(--background-color);
+    overflow: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
