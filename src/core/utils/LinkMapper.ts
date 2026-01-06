@@ -1,8 +1,11 @@
 export class LinkMapper {
 
     private static readonly LINKS: Record<string, string> = {
-        "GITHUB": "",
-        "LINKEDIN": "",
+        "GITHUB": "https://github.com/JulianTs0",
+        "LINKEDIN": "https://www.linkedin.com/in/julian-torres-sorcini-aa4a67238/",
+        "MAIN_FORTUNE": "https://fortune-utn.vercel.app",
+        "GIT_FORTUNE": "",
+        "GIT_CONTAINER": "https://github.com/JulianTs0/contenedores-api",
         "DEFAULT": ""
     }
 

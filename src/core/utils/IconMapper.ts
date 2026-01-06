@@ -32,6 +32,7 @@ import OauthIcon from "../../ui/assets/icons/oauth.svg"
 import SwaggerIcon from "../../ui/assets/icons/swagger.svg"
 import GrafanaIcon from "../../ui/assets/icons/grafana.svg"
 import ContainerIcon from "../../ui/assets/icons/container.svg"
+import FortuneIcon from "../../ui/assets/icons/fortune.svg"
 
 export class IconMapper {
 
@@ -68,7 +69,8 @@ export class IconMapper {
         "OAUTH": OauthIcon,
         "SWAGGER": SwaggerIcon,
         "GRAFANA": GrafanaIcon,
-        "CONTAINER": ContainerIcon
+        "CONTAINER": ContainerIcon,
+        "FORTUNE": FortuneIcon
     }
 
     public static getIcon(type?: string): string {
