@@ -16,7 +16,7 @@ export function ViewModel() {
     const functionTittle: string = "Estudiante de ingeniería en sistemas -> Desarrollador de software";
     const linkedIconItems: LinkedIconItem[] = [
         { text: "LinkedIn", icon: "linkedin", link: "linkedin" },
-        { text: "Mi repositorio", icon: "github", link: "github" }
+        { text: "Mi github", icon: "github", link: "github" }
     ];
     const iconItems: IconItem[] = [
         { text: "Argentina -> Córdoba -> Córdoba capital", icon: "pin" },

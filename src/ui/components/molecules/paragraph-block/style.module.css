@@ -8,10 +8,6 @@
     gap: 8px;
 }
 
-.text {
-    /* Base style inherits from DetailText, we only override for media query if needed */
-}
-
 @media (max-width: 500px) {
     .text {
         font-size: 14px;

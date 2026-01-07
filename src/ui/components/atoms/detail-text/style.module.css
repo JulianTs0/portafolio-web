@@ -4,8 +4,7 @@
     font-weight: 400;
     font-size: 16px;
     white-space: pre-wrap;
-    word-break: break-word; /* Ensure long words break if needed */
-    overflow-wrap: break-word; /* Standard property for wrapping */
-    max-width: 100%; /* Ensure text doesn't overflow container */
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
-
